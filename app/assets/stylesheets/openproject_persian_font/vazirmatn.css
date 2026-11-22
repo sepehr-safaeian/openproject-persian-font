@@ -1,0 +1,97 @@
+/*-- copyright
+  OpenProject Persian Font Extension
+  Copyright (C) 2026 Sepehr Safaeian
+  MIT License
+++*/
+
+/* Local Vazirmatn Variable Font Definition */
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/assets/openproject_persian_font/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+       url('/assets/openproject_persian_font/Vazirmatn[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Custom Properties / Design Tokens */
+:root {
+  --body-font-family: "Vazirmatn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fontStack-sans-serif: "Vazirmatn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fontStack-system: "Vazirmatn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ck-content-font-family: var(--body-font-family);
+}
+
+/* Global Application Typography */
+html,
+body,
+#wrapper,
+.op-app,
+.primer-theme,
+[data-color-mode] {
+  font-family: var(--body-font-family);
+}
+
+/* Header, Navigation & Sidebar */
+.op-app-header,
+.op-app-header * :not([class*="icon"]):not(.octicon),
+.op-sidebar,
+.main-menu,
+.main-menu--navigation,
+.op-tabs {
+  font-family: var(--body-font-family);
+}
+
+/* Form Controls & Interactive Elements */
+button,
+.button,
+.btn,
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]),
+optgroup,
+select,
+textarea,
+.form--field,
+.form--label,
+.form--text-field,
+.form--select {
+  font-family: var(--body-font-family);
+}
+
+/* Tables, Data Grids & Work Packages */
+.generic-table,
+.generic-table--cell,
+.data-table,
+.wp-table,
+.work-packages--table,
+.work-package--details,
+.work-packages--show-view,
+.wp-card {
+  font-family: var(--body-font-family);
+}
+
+/* Agile Boards, Modals, Dropdowns & Notifications */
+.boards-list,
+.board-column,
+.modal-delivery,
+.spot-modal,
+.op-dialog,
+.dropdown-menu,
+.action-menu,
+.op-toast,
+.flash,
+.notification-box,
+.settings-section,
+.user-profile-widget {
+  font-family: var(--body-font-family);
+}
+
+/* Preserve Icon Fonts */
+[class^="icon-"],
+[class*=" icon-"],
+.op-icon,
+.octicon,
+.fa,
+[class^="spot-icon-"],
+.openproject-icon-font {
+  font-family: "openproject-icon-font" !important;
+}
